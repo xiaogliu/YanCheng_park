@@ -1,0 +1,11 @@
+.nav li a:hover {
+    color: #00bf70;
+    background: #f90;
+}
+.dist:hover img {
+    transform: rotateY(360deg);
+    width: 100%;
+}
+.dist img {
+        transition: all 1s;
+}

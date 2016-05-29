@@ -6,101 +6,122 @@
     <title>盐城城南新区智慧停车场 </title>
     <meta name="keywords" value="江苏九比特" />
     <meta name="description" />
+    <link rel="stylesheet" href="css/parallax-slider.css" type="text/css" />
     <link href="css/body.css" rel="stylesheet" type="text/css" /> 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/web_js.js"></script>
-            <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
-            <script type="text/javascript">
-                $(function () {
-                    $('.map_i li').hover(function () {
-                        $(this).css({ zIndex: '3' }).find('.map_des').show();
-                    }, function () {
-                        $(this).css({ zIndex: '2' }).find('.map_des').hide();
-                    });
-                });
-            </script>
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" /> 
 </head>
 
 <body>
-    <div class="back_to_top"><a title="返回顶部" href="javascript:;"><i class="i"></i></a></div>
+<div class="back_to_top"><a title="返回顶部" href="javascript:;"><i class="i"></i></a></div>
 
-    <div class="container">
-
-        <div class="container_page clearfix">
-            <div class="head back_white">
-                <div class="web_widht top clearfix">
-					<div class="logo left" ><a href="/"><img src="images/parkYanchenglogo.gif" style="height:80px;"/></a></div>
-                    <div class="log_state right font16" id="login_status" style="display:block">
-                        <a href="/parkYanCheng/login" class="log">登录</a><a href="register" class="reg">注册</a>
-                    </div>
-                </div>
-                <div class="nav font16">
-                    <div class="clearfix web_widht">
-                        <ul class="clearfix left">
-                            <li  class="on">
-                                <a href="/">首 页</a></li@Html>
-                            </li>
-                            <li><a href="/parkYanCheng/login">个人中心</a></li>
-                            <li ><a href="map">停车场搜索</a></li>
-
-                           
-                        </ul>
-        
-                    </div>
+<div class="container">
+    <div class="container_page clearfix">
+        <div class="head back_white">
+            <div class="web_widht top clearfix">
+                <div class="logo left" ><a href="/"><img src="images/parkYanchenglogo.gif" style="height:80px;"/></a></div>
+                <div class="log_state right font16" id="login_status" style="display:block">
+                    <a href="/parkYanCheng/login" class="log">登录</a><a href="register" class="reg">注册</a>
                 </div>
             </div>
-<div id="slideBox" class="slideBox">
-    <div class="hd">
-        <ul></ul>
-    </div>
-    <div class="banner">
-        <ul>
-        <li style="background:#eee url(images/photo1.jpg) no-repeat center top;">
-            <a href="/map" target="_blank"></a>
-        </li>
-        <li style="background:#eee url(images/photo2.jpg) no-repeat center top;">
-            <a href="login" target="_blank"></a>
-        </li>
+            <div class="nav font16">
+                <div class="clearfix web_widht">
+                    <ul class="clearfix left">
+                        <li  class="on">
+                        <a href="/">首 页</a></li@Html>
+                        </li>
+                        <li><a href="/parkYanCheng/login">个人中心</a></li>
+                        <li ><a href="map">停车场搜索</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!--=== Slider ===-->
+        <div class="slider-inner">
+            <div id="da-slider" class="da-slider">
+                <div class="da-slide">
+                    <h2><i>盐城城南新区</i> <br /> <i>智慧停车场系统</i> <br /> <i>欢迎您！</i></h2>
+                    <p><i>Welcome you!</i></p>
+                    <div class="da-img"><img src="img/apps.png"/></div>
+                </div>
+                <div class="da-slide">
+                    <h2><i>停车场管理</i> <br /> <i>简单 方便 快捷</i></h2>
+                    <p><i>Park Management</i> <br /> <i>Simple &amp; Convenient &amp; Efficient</i></p>
+                    <div class="da-img"><img src="img/park-pay.png"/></div>
+                </div>
+                <nav class="da-arrows">
+                    <span class="da-arrows-prev"></span>
+                    <span class="da-arrows-next"></span>
+                </nav>
+            </div><!--/da-slider-->
+        </div><!--/slider-->
+
+        <div class="web_widht" style="margin-top: 50px;">
+            <div class="dist font24 radius_3 relative text_center">我们盐城目前共有 
+                <b class="font36 color_f" id="parknum"></b> 个停车场 
+                <b class="font36 color_f" id="cheweinum"></b> 个停车位 
+                <a href="/parkYanCheng/map" class="i"><img src="images/ico3.png" /></a>
+            </div>
+        </div>   
+
+        <ul class="grid cs-style-3">
+            <li>
+            <figure>
+                <img src="images/feature1.jpg" alt="img03">
+                <figcaption>
+                <h3>实时精准</h3>
+                <span>百万传感器布局海量停车场，实时精准的停车信息,百万传感器布局海量停车场，实时精准的停车信息</span>
+                </figcaption>
+            </figure>
+            </li>
+            <li>
+            <figure>
+                <img src="images/feature2.jpg" alt="img01">
+                <figcaption>
+                <h3>Seeds</h3>
+                <span>Jacob Cummings</span>
+                </figcaption>
+            </figure>
+            </li>
+            <li>
+            <figure>
+                <img src="images/feature3.jpg" alt="img02">
+                <figcaption>
+                <h3>Seeds</h3>
+                <span>Jacob Cummings</span>
+                </figcaption>
+            </figure>
+            </li>
+            <li>
         </ul>
-    </div>
-    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-    <a class="prev" style="background-color:black;"  href="javascript:void(0)"></a>
-    <a class="next" style="background-color:black;" href="javascript:void(0)"></a>
-</div>
 
-<div class="web_widht">
-    <div class="news_i radius_3">
-        <div class="laba"></div>
-        <div class="txtScroll-left right">
-            <div class="bd left">
-                <ul>
-              
-                </ul>
-            </div>
-            <div class="hd right relative"><a class="prev" href="javascript:;"></a><a class="next" href="javascript:;"></a></div>
+        <div class="foot">         
+            <p class="color_c"><a href="#">关于我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">新闻中心</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">网站公告</a></p>
+            <p>Copyright © 2015  版权所有 </a></p>
         </div>
     </div>
-
-    <div class="dist font24 radius_3 relative text_center">我们盐城目前共有 <b class="font36 color_f" id="parknum"></b> 个停车场 <b class="font36 color_f" id="cheweinum"></b> 个停车位 <a href="/parkYanCheng/map" class="i"><img src="images/ico3.png" /></a></div>
-</div>   
-
-<div style="margin:0 auto;text-align:center; padding:60px 0 10px 0;" >
- 	<img src="images/dibu.png" />
 </div>
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/web_js.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script> 
+<script type="text/javascript" src="js/jquery.cslider.js"></script>
 
-
-     <div class="foot">         
-        <p class="color_c"><a href="#">关于我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">新闻中心</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">网站公告</a></p>
-        <p>Copyright © 2015  版权所有 </a></p>
-     </div>
-               
-		<script type="text/javascript">
-		$.fn.initial();
-			jQuery(".slideBox").slide({ mainCell: ".banner ul", autoPlay: true, effect: "left", delayTime: 1000, mouseOverStop: false });
-			jQuery(".txtScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "left", delayTime: 700, pnLoop: false, trigger: "click", mouseOverStop: false });
-		</script>
-        </div>
-    </div>
+<!-- JS Page Level -->
+<script type="text/javascript" src="js/app.js"></script> 
+<script type="text/javascript" src="js/index_ani.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+        $('#nav-item-home').addClass('active');
+        });
+</script>
 </body>
 </html>
