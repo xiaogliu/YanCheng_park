@@ -4,109 +4,131 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>盐城城南新区智慧停车场 </title>
-    <meta name="keywords" value="江苏九比特" />
+    <meta name="keywords" value="盐城城南新区智慧停车场" />
     <meta name="description" />
+    <link rel="stylesheet" href="YanCheng_park/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="YanCheng_park/css/article_list.css" type="text/css" />
     <link rel="stylesheet" href="YanCheng_park/css/parallax-slider.css" type="text/css" />
-    <link href="YanCheng_park/css/body.css" rel="stylesheet" type="text/css" /> 
-    <link href="YanCheng_park/css/mystyle.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="YanCheng_park/css/mystyle.css" type="text/css" /> 
 </head>
 
 <body>
-<div class="back_to_top"><a title="返回顶部" href="javascript:;"><i class="i"></i></a></div>
 
-<div class="container">
-    <div class="container_page clearfix">
-        <div class="head back_white">
-            <div class="web_widht top clearfix">
-                <div class="logo left" ><a href="/"><img src="YanCheng_park/images/parkYanchenglogo.gif" style="height:80px;"/></a></div>
-                <div class="log_state right font16" id="login_status" style="display:block">
-                    <a href="/parkYanCheng/login" class="log">登录</a><a href="register" class="reg">注册</a>
-                </div>
-            </div>
-            <div class="nav font16">
-                <div class="clearfix web_widht">
-                    <ul class="clearfix left">
-                        <li  class="on">
-                        <a href="/">首 页</a></li@Html>
-                        </li>
-                        <li><a href="/parkYanCheng/login">个人中心</a></li>
-                        <li ><a href="map">停车场搜索</a></li>
-                    </ul>
-
-                </div>
-            </div>
+<div class="row yc-logo">
+    <div class="col-md-2 col-md-offset-2">
+        <img alt="智慧停车系统" src="YanCheng_park/images/parkYanchenglogo.gif" id="logo">
+    </div>
+</div>
+<!-- nav -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" 
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-        <!--=== Slider ===-->
-        <div class="slider-inner">
-            <div id="da-slider" class="da-slider">
-                <div class="da-slide">
-                    <h2><i>盐城城南新区</i> <br /> <i>智慧停车场系统</i> <br /> <i>欢迎您！</i></h2>
-                    <p><i>Welcome you!</i></p>
-                    <div class="da-img"><img src="YanCheng_park/img/apps.png"/></div>
-                </div>
-                <div class="da-slide">
-                    <h2><i>停车场管理</i> <br /> <i>简单 方便 快捷</i></h2>
-                    <p><i>Park Management</i> <br /> <i>Simple &amp; Convenient &amp; Efficient</i></p>
-                    <div class="da-img"><img src="YanCheng_park/img/park-pay.png"/></div>
-                </div>
-                <nav class="da-arrows">
-                    <span class="da-arrows-prev"></span>
-                    <span class="da-arrows-next"></span>
-                </nav>
-            </div><!--/da-slider-->
-        </div><!--/slider-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="javascript:void(0)"> 首页 </a></li>
+                <li>
+                <a href="javascript:void(0)"> 个人中心 </a>
+                </li>
+                <li>
+                <a href="javascript:void(0)"> 停车场搜索 </a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <button class="btn btn-warning"> 登录 </button>
+                <button class="btn btn-warning"> 注册 </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- end nav-->
 
-        <div class="web_widht" style="margin-top: 50px;">
-            <div class="dist font24 radius_3 relative text_center">我们盐城目前共有 
-                <b class="font36 color_f" id="parknum"></b> 个停车场 
-                <b class="font36 color_f" id="cheweinum"></b> 个停车位 
-                <a href="/parkYanCheng/map" class="i"><img src="YanCheng_park/images/ico3.png" /></a>
-            </div>
-        </div>   
+<!--=== Slider ===-->
+<div class="slider-inner">
+    <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+            <h2><i>盐城城南新区</i> <br /> <i>智慧停车场系统</i> <br /> <i>欢迎您！</i></h2>
+            <p><i>Welcome you!</i></p>
+            <div class="da-img"><img src="YanCheng_park/img/apps.png"/></div>
+        </div>
+        <div class="da-slide">
+            <h2><i>停车场管理</i> <br /> <i>简单 方便 快捷</i></h2>
+            <p><i>Park Management</i> <br /> <i>Simple &amp; Convenient &amp; Efficient</i></p>
+            <div class="da-img"><img src="YanCheng_park/img/park-pay.png"/></div>
+        </div>
+        <nav class="da-arrows">
+            <span class="da-arrows-prev"></span>
+            <span class="da-arrows-next"></span>
+        </nav>
+    </div><!--/da-slider-->
+</div><!--/slider-->
 
-        <ul class="grid cs-style-3">
-            <li>
-            <figure>
+<div class="park-number col-md-8 col-md-offset-2">
+    <button class="btn btn-block yc-button">
+        我们盐城目前共有 
+        <b id="parknum"></b> 个停车场 
+        <b id="cheweinum"></b> 个停车位 
+        <span class="glyphicon glyphicon glyphicon-send" aria-hidden="true"></span>
+    </button>
+</div>   
+<div class="yc-map col-md-8 col-md-offset-2">
+    <img src="YanCheng_park/images/map.jpg" alt="img03">
+</div>   
+
+<div class="row yc-features">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="col-md-1">
                 <img src="YanCheng_park/images/feature1.jpg" alt="img03">
-                <figcaption>
+            </div>
+            <div class="col-md-3">
                 <h3>实时精准</h3>
-                <span>百万传感器布局海量停车场，实时精准的停车信息,百万传感器布局海量停车场，实时精准的停车信息</span>
-                </figcaption>
-            </figure>
-            </li>
-            <li>
-            <figure>
+                <p>百万传感器布局海量停车场</p>
+                <p>实时精准的停车信息</p>
+            </div>
+            <div class="col-md-1">
                 <img src="YanCheng_park/images/feature2.jpg" alt="img01">
-                <figcaption>
-                <h3>Seeds</h3>
-                <span>Jacob Cummings</span>
-                </figcaption>
-            </figure>
-            </li>
-            <li>
-            <figure>
+            </div>
+            <div class="col-md-3">
+                <h3>停车信息大数据</h3>
+                <p>停车大数据智能分析预测系统</p>
+                <p>智能城市诱导系统供应商</p>
+                <p>智慧景区停车数据供应商</p>
+            </div>
+            <div class="col-md-1">
                 <img src="YanCheng_park/images/feature3.jpg" alt="img02">
-                <figcaption>
-                <h3>Seeds</h3>
-                <span>Jacob Cummings</span>
-                </figcaption>
-            </figure>
-            </li>
-            <li>
-        </ul>
-
-        <div class="foot">         
-            <p class="color_c"><a href="#">关于我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">新闻中心</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">网站公告</a></p>
-            <p>Copyright © 2015  版权所有 </a></p>
+            </div>
+            <div class="col-md-3">
+                <h3>远程发布</h3>
+                <p>城市诱导</p>
+                <p>远程精准发布系统</p>
+                <p>动态监测实时预警系统</p>
+            </div>
         </div>
     </div>
 </div>
+<hr />
+
+<div class="row" id="copyRight">
+    <div class="col-md-12">
+        <p><a href="#">关于我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">新闻中心</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">网站公告</a></p>
+        <p>
+        Copyright © 2015  版权所有
+        </p>
+    </div>
+</div>
 <!-- JS Global Compulsory -->
-<script type="text/javascript" src="YanCheng_park/js/index.js"></script>
-<script type="text/javascript" src="YanCheng_park/js/web_js.js"></script>
 <script type="text/javascript" src="YanCheng_park/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="YanCheng_park/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="YanCheng_park/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="YanCheng_park/js/yancheng_js.js"></script> 
 <!-- JS Implementing Plugins -->
 <script type="text/javascript" src="YanCheng_park/js/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="YanCheng_park/js/modernizr.js"></script> 

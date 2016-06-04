@@ -1,0 +1,76 @@
+/* 覆盖默认bs css样式 */
+body {
+    font-family:"Microsoft YaHei",微软雅黑; /* 设置字体为微软雅黑 */
+    font-size: 16px;
+}
+.navbar {
+    margin: 0;
+}
+.navbar-default {
+    background-color: #0ac275;
+    border: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    color: #0ac275;
+    background-color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    transition: all 1s;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f90; 
+}
+.yc-map img {
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+.yc-logo img {
+    margin: 10px 40px;
+}
+.yc-button {
+    padding: 20px;
+    margin: 40px 0 0 0;
+    font-size: 24px;
+    color: #fff;
+    background-color: #f90;
+    border-color: #f90;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.yc-button:hover {
+    color: #fff;
+    background-color: #ffae00;
+    border-color: #ffae00;
+}
+.yc-button span {
+    float: right;
+    margin-right: 20px;
+    transition: all 1s;
+}
+.yc-button:hover span {
+    transform: rotateY(360deg);
+}
+.yc-features img {
+    float: right;
+    margin-right: 20px;
+    transition: all 1s;
+}
+.yc-features img:hover {
+    transform: rotateY(360deg);
+}
+.yc-features {
+    margin: 0 auto;
+}
+#copyRight a {
+    color: #8d776a;
+    text-decoration: none;
+}
+#copyRight p {
+    color: #8d776a;
+    text-align: center;
+    font-size: 15px;
+}
