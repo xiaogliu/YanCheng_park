@@ -1583,24 +1583,24 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-right: 0; /* 修改/添加 */
+  padding-left: 0; /* 修改/添加 */
+  margin-right: 0; /* 修改/添加 */
+  margin-left: 0; /* 修改/添加 */
 }
 @media (min-width: 768px) {
   .container {
-    width: 100%px;
+    width: 100%; /* 修改/添加 */
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 100%px;
+    width: 100%; /* 修改/添加 */
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 100%px;
+    width: 100%; /* 修改/添加 */
   }
 }
 .container-fluid {
@@ -6798,3 +6798,4 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
