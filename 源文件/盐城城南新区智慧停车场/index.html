@@ -1,0 +1,106 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>盐城城南新区智慧停车场 </title>
+    <meta name="keywords" value="江苏九比特" />
+    <meta name="description" />
+    <link href="css/body.css" rel="stylesheet" type="text/css" /> 
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/web_js.js"></script>
+            <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                    $('.map_i li').hover(function () {
+                        $(this).css({ zIndex: '3' }).find('.map_des').show();
+                    }, function () {
+                        $(this).css({ zIndex: '2' }).find('.map_des').hide();
+                    });
+                });
+            </script>
+</head>
+
+<body>
+    <div class="back_to_top"><a title="返回顶部" href="javascript:;"><i class="i"></i></a></div>
+
+    <div class="container">
+
+        <div class="container_page clearfix">
+            <div class="head back_white">
+                <div class="web_widht top clearfix">
+					<div class="logo left" ><a href="/"><img src="images/parkYanchenglogo.gif" style="height:80px;"/></a></div>
+                    <div class="log_state right font16" id="login_status" style="display:block">
+                        <a href="/parkYanCheng/login" class="log">登录</a><a href="register" class="reg">注册</a>
+                    </div>
+                </div>
+                <div class="nav font16">
+                    <div class="clearfix web_widht">
+                        <ul class="clearfix left">
+                            <li  class="on">
+                                <a href="/">首 页</a></li@Html>
+                            </li>
+                            <li><a href="/parkYanCheng/login">个人中心</a></li>
+                            <li ><a href="map">停车场搜索</a></li>
+
+                           
+                        </ul>
+        
+                    </div>
+                </div>
+            </div>
+<div id="slideBox" class="slideBox">
+    <div class="hd">
+        <ul></ul>
+    </div>
+    <div class="banner">
+        <ul>
+        <li style="background:#eee url(images/photo1.jpg) no-repeat center top;">
+            <a href="/map" target="_blank"></a>
+        </li>
+        <li style="background:#eee url(images/photo2.jpg) no-repeat center top;">
+            <a href="login" target="_blank"></a>
+        </li>
+        </ul>
+    </div>
+    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+    <a class="prev" style="background-color:black;"  href="javascript:void(0)"></a>
+    <a class="next" style="background-color:black;" href="javascript:void(0)"></a>
+</div>
+
+<div class="web_widht">
+    <div class="news_i radius_3">
+        <div class="laba"></div>
+        <div class="txtScroll-left right">
+            <div class="bd left">
+                <ul>
+              
+                </ul>
+            </div>
+            <div class="hd right relative"><a class="prev" href="javascript:;"></a><a class="next" href="javascript:;"></a></div>
+        </div>
+    </div>
+
+    <div class="dist font24 radius_3 relative text_center">我们盐城目前共有 <b class="font36 color_f" id="parknum"></b> 个停车场 <b class="font36 color_f" id="cheweinum"></b> 个停车位 <a href="/parkYanCheng/map" class="i"><img src="images/ico3.png" /></a></div>
+</div>   
+
+<div style="margin:0 auto;text-align:center; padding:60px 0 10px 0;" >
+ 	<img src="images/dibu.png" />
+</div>
+
+
+     <div class="foot">         
+        <p class="color_c"><a href="#">关于我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">新闻中心</a>&nbsp;&nbsp;｜&nbsp;&nbsp;<a href="#">网站公告</a></p>
+        <p>Copyright © 2015  版权所有 </a></p>
+     </div>
+               
+		<script type="text/javascript">
+		$.fn.initial();
+			jQuery(".slideBox").slide({ mainCell: ".banner ul", autoPlay: true, effect: "left", delayTime: 1000, mouseOverStop: false });
+			jQuery(".txtScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "left", delayTime: 700, pnLoop: false, trigger: "click", mouseOverStop: false });
+		</script>
+        </div>
+    </div>
+</body>
+</html>
