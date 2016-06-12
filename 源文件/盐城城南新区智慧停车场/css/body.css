@@ -394,7 +394,7 @@ height: expression(this.height > 5000  && this.width / 1120px < this.height / 50
 .tcsf{ padding-right:14px; cursor:pointer} 
 .tcsf .i,.xl_an .i{ width:7px; height:4px; right:0; top:50%; margin-top:-1px; background:url(../images/ico_sj2.png) no-repeat;filter: Alpha(Opacity=40);opacity: 0.4;}
 .xl_an .i{ right:8px;}
-.xl_an .but_b{ padding:8px 24px 8px 14px; height:14px;}
+.xl_an .but_b{ }
 
 .xl_an ul{ left:0; top:28px; background:#00bf70; border-radius: 0 0 3px 3px;  width:100%; text-align:center; display:none;}
 .xl_an ul li a{ display:block; color:#fff; padding:6px 0;}

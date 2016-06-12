@@ -1,0 +1,153 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name=”renderer” content=”webkit” /> 
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <title>盐城城南新区智慧停车场 </title>
+    <meta name="description" />
+	<link href="css/yc_bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/body.css" rel="stylesheet" type="text/css" > 
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/web_js.js"></script>
+	  <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+            <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                    $('.map_i li').hover(function () {
+                        $(this).css({ zIndex: '3' }).find('.map_des').show();
+                    }, function () {
+                        $(this).css({ zIndex: '2' }).find('.map_des').hide();
+                    });
+                });
+            </script>   
+<style>
+    .foot {
+        background-color: #f2f2f3;
+    }
+</style>
+	
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css"/>
+	
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=c7A2jm3enN7T0s5V8QbDHx85"></script>
+    <script src="js/RichMarker.min.js" type="text/javascript"></script> 
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+    <script src="js/map.js" type="text/javascript"></script> 
+	<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+	<script src="js/utility.js" type="text/javascript"></script> 
+    <style>
+        html, body {
+            overflow-y:hidden
+        }
+        #about_content {
+            overflow-x: hidden;
+            height: 330px;
+            width: 320px;
+        }
+
+            #about_content .jspVerticalBar {
+                margin-left: 320px;
+                background: none;
+                width: 6px;
+                right: 0;
+                z-index: 99999;
+            }
+
+            #about_content .jspTrack {
+                width: 6px;
+                background: #fff;
+            }
+
+            #about_content .jspDrag {
+                background: url(./images/brace.gif) left top no-repeat;
+                width: 6px;
+            }
+        #l-map {
+            height: 300px;
+            width: 100%;
+        }
+
+        #r-result {
+            width: 100%;
+        }
+        .xdsoft_datetimepicker.xdsoft_inline {
+            border:0; margin-left:10px; margin-top:
+        }
+    </style>
+  <script type="text/javascript" src="js/all.js"></script>	<!-- 下拉框 -->
+  <script src="js/jquery.json-2.4.min.js">
+  </script>
+
+	
+</head>
+
+<body>
+    <div class="back_to_top"><a title="返回顶部" href="javascript:;"><i class="i"></i></a></div>
+    <label style="display:none" id="islogin">$isLogin</label>
+    <div class="container">
+        <div class="container_page clearfix">
+            <div class="head back_white">
+                <div class="web_widht top clearfix">
+                    <div class="logo left" ><a href="/"><img src="images/parkYanchenglogo.gif" style="height:80px;"/></a></div>
+                    <div class="log_state right font16" id="login_status" style="display:block">
+                    <a href="/parkYanCheng/login" class="log">登录</a><a href="register" class="reg">注册</a>                     </div>
+                </div>
+                <div class="nav font16">
+                    <div class="clearfix web_widht">
+                        <ul class="clearfix left">
+                            <li  >
+                                <a href="/parkYanCheng">首 页</a></li@Html>
+                            </li>
+                            <li ><a href="/parkYanCheng/login">个人中心</a></li>
+                            <li class="on"><a href="/parkYanCheng/map">停车场搜索</a></li>     
+                        </ul>                      
+                    </div>
+                </div>
+            </div>
+<div class="search_map absolute back_white radius_3 font16">
+<div id="socia_cont" class="left">
+        <div class="select color_f">
+            <i class="i"></i>
+            <input class="val" name="lid" value="" type="hidden">
+            <div class="show">停车场</div>
+            <div style="display: none;" class="options">
+                <div class="option">美食</div>
+                <div class="option">加油站</div>
+				 <div class="option">汽车维修</div>
+                <div class="option">汽车美容</div>               
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div id="tipshow">
+</div>
+<div class="map_bd left" id="mapyancheng"></div>
+<div class="add_list back_white right color_9 lh_18" id="about_content">
+    <ul id="parking_list">
+    </ul>
+</div>
+<div id="maptip" class="map_tk back_white absolute font12 radius_3" style="left:30%; top:50%; display:none"></div>
+<div id="mapres" class="map_tk back_white absolute font12 radius_3" style="left: 30%; top: 50%; margin-top:-160px; display: none; height:320px;"></div>           
+        <script>
+            $('.map_bd,.add_list').height($(window).height() - 148);
+            $('.map_bd').width($(window).width() - 320);
+            $(window).resize(function () {
+                $('.map_bd,.add_list').height($(window).height() - 148);
+                $('.map_bd').width($(window).width() - 320);
+            });                       
+            $(document).ready(function(){
+            	$.fn.map.initial();
+            });                                         
+        </script>    
+        </div>
+    </div>
+
+        </div>
+    </div>
+</body>
+</html>

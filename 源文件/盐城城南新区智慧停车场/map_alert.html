@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name=”renderer” content=”webkit” /> 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport"
+content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>盐城城南新区智慧停车场 </title>
+<meta name="description" />
+<link href="css/yc_bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/body.css" rel="stylesheet" type="text/css" > 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/web_js.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+$(function () {
+        $('.map_i li').hover(function () {
+            $(this).css({ zIndex: '3' }).find('.map_des').show();
+            }, function () {
+            $(this).css({ zIndex: '2' }).find('.map_des').hide();
+            });
+        });
+</script>   
+<style>
+.foot {
+    background-color: #f2f2f3;
+}
+</style>
+
+<link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css"/>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=c7A2jm3enN7T0s5V8QbDHx85"></script>
+<script src="js/RichMarker.min.js" type="text/javascript"></script> 
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+<script src="js/map.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/utility.js" type="text/javascript"></script> 
+<style>
+html, body {
+    overflow-y:hidden
+}
+#about_content {
+    overflow-x: hidden;
+    height: 330px;
+    width: 320px;
+}
+
+#about_content .jspVerticalBar {
+    margin-left: 320px;
+    background: none;
+    width: 6px;
+    right: 0;
+    z-index: 99999;
+}
+
+#about_content .jspTrack {
+    width: 6px;
+    background: #fff;
+}
+
+#about_content .jspDrag {
+    background: url(./images/brace.gif) left top no-repeat;
+    width: 6px;
+}
+#l-map {
+    height: 300px;
+    width: 100%;
+}
+
+#r-result {
+    width: 100%;
+}
+.xdsoft_datetimepicker.xdsoft_inline {
+    border:0; margin-left:10px; margin-top:
+}
+</style>
+<script type="text/javascript" src="js/all.js"></script>	<!-- 下拉框 -->
+<script src="js/jquery.json-2.4.min.js">
+</script>
+
+
+</head>
+
+<body>
+
+<div class="map-alert">
+<h1 class="font18 green yahei" style="padding: 20px 0 10px 10px;font-weight: bold;">创投中心停车场<i class="i pointer" onclick="closeTip()"></i></h1>
+<p class="font18 green yahei" style="padding: 10px 0 10px 10px;">空余车位：<b class="red yahei"> 20 </b> 个
+<a href="#" id="reservation" class="but_b back_orange font18 radius_3 absolute reservation" style="bottom:10px; right:10px;"><i class="i"></i>预定</a></p>
+<p class="green font18 yahei" style="padding: 10px 0 10px 10px">收费标准：</p> 
+
+</div>
+
+    </body>
+    </html>
