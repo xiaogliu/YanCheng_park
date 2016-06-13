@@ -6799,3 +6799,9 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+/* 更改地图页面弹出框背景色 */
+.BMapLib_bubble_content {
+  background-color: #00bf70;
+}
+/* 更改地图页面弹出框背景色结束 */
+
